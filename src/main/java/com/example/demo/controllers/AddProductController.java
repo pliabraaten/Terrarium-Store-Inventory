@@ -181,8 +181,8 @@ public class AddProductController {
         return "productForm";
     }
 
-    @GetMapping("/buyProduct")
-    public String buyProduct(@RequestParam("productID") int theId, Model theModel) {
+    @GetMapping("/sellProduct")
+    public String sellProduct(@RequestParam("productID") int theId, Model theModel) {
         // Initialize
         ProductService productService = context.getBean(ProductServiceImpl.class);
         // Create product object
